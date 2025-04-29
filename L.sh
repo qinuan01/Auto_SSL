@@ -1,8 +1,5 @@
 #!/bin/sh
-echo '更新系统'
-apt update
-apt install nginx
-echo '安装nginx完毕'
+
 read -p "请输入域名:" domain && cd /tmp
 if [ ! -f "lego_v3.8.0_freebsd_amd64.tar.gz" ]; then
   wget https://cdn.jsdelivr.net/gh/moeik/domainSSL@master/lego/lego_v3.8.0_linux_amd64.tar.gz
