@@ -1,5 +1,6 @@
 #!/bin/sh
-echo '安装nginx'
+echo '更新系统'
+apt update
 apt install nginx
 echo '安装nginx完毕'
 read -p "请输入域名:" domain && cd /tmp
