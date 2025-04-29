@@ -1,6 +1,7 @@
 #!/bin/sh
 
-sudo apt install nginx
+echo "Installing nginx..."
+sudo apt install -y nginx
 
 read -p "请输入域名:" domain && cd /tmp
 if [ ! -f "lego_v3.8.0_freebsd_amd64.tar.gz" ]; then
